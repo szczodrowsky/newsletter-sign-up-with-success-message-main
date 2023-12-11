@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body>
+    <!-- Sign-up form start -->
+    <div class="first-container">
+      <picture clas="background">
+        <source
+          srcset="./assets/images/illustration-sign-up-desktop.svg"
+          media="(min-width:610px)"
+        />
+        <img
+          class="background-photo"
+          src="./assets/images/illustration-sign-up-mobile.svg"
+          alt="tlo"
+        />
+      </picture>
+      <div class="content-container">
+        <h1 class="content-tittle">Stay updated!</h1>
+        <p class="content-text">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <div class="checks">
+          <div class="check">
+            <svg
+              clas="checksicon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="21"
+              height="21"
+              viewBox="0 0 21 21"
+            >
+              <g fill="none">
+                <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                <path
+                  stroke="#FFF"
+                  stroke-width="2"
+                  d="M6 11.381 8.735 14 15 8"
+                />
+              </g>
+            </svg>
+            <p class="checks-text">
+              Product discovery and building what matters
+            </p>
+          </div>
+          <div class="check">
+            <svg
+              clas="checksicon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="21"
+              height="21"
+              viewBox="0 0 21 21"
+            >
+              <g fill="none">
+                <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                <path
+                  stroke="#FFF"
+                  stroke-width="2"
+                  d="M6 11.381 8.735 14 15 8"
+                />
+              </g>
+            </svg>
+            <p class="checks-text">Measuring to ensure updates are a success</p>
+          </div>
+          <div class="check">
+            <svg
+              clas="checksicon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="21"
+              height="21"
+              viewBox="0 0 21 21"
+            >
+              <g fill="none">
+                <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                <path
+                  stroke="#FFF"
+                  stroke-width="2"
+                  d="M6 11.381 8.735 14 15 8"
+                />
+              </g>
+            </svg>
+            <p class="checks-text">And much more!</p>
+          </div>
+        </div>
+        <div class="input">
+          <div class="labels">
+            <label class="input-tittle" for="input">Email address</label>
+            <label class="erorr-tittle error" for="input"
+              >Valid email required</label
+            >
+          </div>
+          <input
+            class="input-field"
+            type="text"
+            name="input"
+            id="input-email"
+            placeholder="email@company.com"
+          />
+        </div>
+        <button class="submit-btn" id="submit-btn">
+          Subscribe to monthly newsletter
+        </button>
+      </div>
+    </div>
+    <!-- Sign-up form end -->
+    <!-- Success message start -->
+    <div class="second-container hide">
+      <div class="second-content">
+        <picture class="big-check">
+          <img src="./assets/images/icon-success.svg" alt="udalo sie" />
+        </picture>
+        <h2 class="subtittle">Thanks for subscribing!</h2>
+        <p class="second-text">
+          A confirmation email has been sent to
+          <span class="mail" id="mail">ash@loremcompany.com</span>. Please open
+          it and click the button inside to confirm your subscription.
+        </p>
+      </div>
+      <button class="back-button">Dismiss message</button>
+    </div>
+    <!-- Success message end -->
+    <script src="index.js"></script>
+  </body>
+</html>
